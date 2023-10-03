@@ -1,0 +1,153 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/barlow-v12-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/barlow-v12-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/fraunces-v31-latin-900.woff2') format('woff2');
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before *::after {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", 'Arial', 'sans-serif';
+    font-size: 18px;
+    line-height: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.container {
+    width: 1280px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+.book .container {
+    background-color: #333D4B;
+    width: 1300px;
+    border-radius: 8px;
+    padding-top: 100px;
+}
+
+.book__span {
+    width: 760px;
+    height: 1px;
+    border-radius: 2px;
+    background-color: #FDD6BA;
+    display: block;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+.book__div {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #0E8784;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.book__info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    transform: translate(30px, -113px);
+}
+
+.book__div+.book__div {
+    margin-left: 349px;
+}
+
+.book__div:nth-child(3) {
+    margin-left: 775px;
+}
+
+.book__list {
+    display: flex;
+}
+
+.book__h1 {
+    color: #FDD6BA;
+    font-family: 'Fraunces';
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 72px;
+}
+
+.book__h2 {
+    width: 200px;
+    color: #FEFCF7;
+    font-family: 'Fraunces';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 36px;
+}
+
+.book__text {
+    width: 285px;
+    color: #FEFCF7;
+    font-family: 'Barlow';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 100px;
+}
+
+.book__item + .book__item {
+    padding-left: 100px;
+}
